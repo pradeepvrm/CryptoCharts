@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CryptoCharts</title>
+   <link rel="icon" type="image/png" href="static/favicon.png">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src = "https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+   <link rel="stylesheet" href="static/style.css">
+</head>
+<body >
+   <nav class="bg-gray-800 text-white p-3 flex justify-between items-center px-8" id="top-nav">
+      <div class="flex items-center">
+        <a class="text-xl font-bold">CryptoCharts</a>
+      </div>
+      <a class="font-sans font-bold hover:text-blue-400 duration-300" href="https://github.com/pradeepvrm/cryptocharts">
+         GitHub
+      </a>
+    </nav>
+    <div class="flex flex-col md:flex-row">
+      <div class="bg-gray-800 text-white p-4 md:block md:w-64 transition-all duration-300 ease-in-out" id="sidebar">
+        <nav>
+          <ul>
+            <li class="mb-2 hover:bg-gray-700 rounded p-2 duration-300" id="BTC"><a href="#">Bitcoin (BTC)</a></li>
+            <li class="mb-2 hover:bg-gray-700 rounded p-2 duration-300" id="ETH"><a href="#">Ethereum (ETH)</a></li>
+            <li class="mb-2 hover:bg-gray-700 rounded p-2 duration-300" id="LTC"><a href="#">Litecoin (LTC)</a></li>
+            <li class="mb-2 hover:bg-gray-700 rounded p-2 duration-300" id="XRP"><a href="#">Ripple (XRP)</a></li>
+            <li class="mb-2 hover:bg-gray-700 rounded p-2 duration-300" id="ADA"><a href="#">Cardano (ADA)</a></li>
+            <li class="mb-2 hover:bg-gray-700 rounded p-2 duration-300" id="SOL"><a href="#">Solana (SOL)</a></li>
+            <li class="mb-2 hover:bg-gray-700 rounded p-2 duration-300" id="AVAX"><a href="#">Avalanche (AVAX)</a></li>
+            <li class="mb-2 hover:bg-gray-700 rounded p-2 duration-300" id="DOT"><a href="#">Polkadot (DOT)</a></li>
+            <li class="mb-2 hover:bg-gray-700 rounded p-2 duration-300" id="MATIC"><a href="#">Matic (MATIC)</a></li>
+            <li class="mb-2 hover:bg-gray-700 rounded p-2 duration-300" id="LINK"><a href="#">Chainlink (LINK)</a></li>
+            <li class="mb-2 hover:bg-gray-700 rounded p-2 duration-300" id="UNI"><a href="#">Uniswap (UNI)</a></li>
+            <li class="mb-2 hover:bg-gray-700 rounded p-2 duration-300" id="USDT"><a href="#">Tether (USDT)</a></li>
+            <li class="mb-2 hover:bg-gray-700 rounded p-2 duration-300" id="DOGE"><a href="#">Dogecoin (DOGE)</a></li>
+          </ul>
+        </nav>
+      </div>
+   <div class="flex-1 p-4">
+      <!-- Chart Container -->
+      <div id="container"></div>
+         <div class="flex px-6 space-x-14 py-1">
+            <button class="border border-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-12 rounded duration-300" id="1day">1D</button>
+            <button class="border border-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-12 rounded duration-300" id="1week">1W</button>
+            <button class="border border-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-12 rounded duration-300" id="1month">1M</button>
+            <button class="border border-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-12 rounded duration-300" id="6month">6M</button>
+            <button class="border border-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-12 rounded duration-300" id="1year">1Y</button>
+            <button class="border border-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-12 rounded duration-300" id="2year">2Y</button>
+         </div>
+   </div>
+</body>
+<script src="static/chart.js"></script>
+<script src="static/app.js"></script>
+</html>
