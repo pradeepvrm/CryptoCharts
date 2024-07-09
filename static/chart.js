@@ -2,13 +2,23 @@ function getData(symbol, interval) {
   fetch(`/data/${symbol}/${interval}`)
     .then(response => response.json())
     .then(data => {
+      chart.applyOptions({
+        watermark: {
+          visible: true,
+          fontSize: 50,
+          horzAlign: 'center',
+          vertAlign: 'center',
+          color: 'rgba(120, 120, 120, 0.4)',
+          text: symbol + ' - ' + interval,
+        },
+      });
       mainSeries.setData(data);
     });
 }
 
-window.addEventListener('load', () => {
-   getData("BTC", "1year");
-});
+window.onload = () => {
+  getData("BTC", "1year");
+};
 
 // Chart setup and configuration
 const chart = LightweightCharts.createChart(
