@@ -1,7 +1,7 @@
 # CryptoCharts
 This project is a cryptocurrency charting web app that displays a TradingView lightweight chart with candlestick data fetched from [Polygon API](https://polygon.io/) .
 
-- Live LINK: [CryptoCharts](https://cryptocharts.onrender.com/#)
+- LIVE LINK: [CryptoCharts](https://cryptocharts.onrender.com/#)
 
 ## Installation
 
@@ -9,7 +9,7 @@ This project is a cryptocurrency charting web app that displays a TradingView li
    
    ```sh
    python -m venv .venv
-   .env/scripts/activate
+   .venv/scripts/activate
    ```
 
 2. **Clone the repository:**
