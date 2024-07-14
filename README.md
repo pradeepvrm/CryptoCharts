@@ -3,6 +3,10 @@ This project is a cryptocurrency charting web app that displays a TradingView li
 
 - LIVE LINK: [CryptoCharts](https://cryptocharts.onrender.com/#)
 
+### Example
+
+   <img src="assets/example.jpeg"/>
+
 ## Installation
 
 1. **Create virtual environment:**
