@@ -2,9 +2,10 @@ from flask import Flask, render_template, jsonify
 from polygon import RESTClient
 import datetime
 from datetime import timedelta
-from api_key import API_KEY
+# from api_key import API_KEY
 
-client = RESTClient(api_key = API_KEY)
+# client = RESTClient(api_key = API_KEY)
+client = RESTClient(api_key= "IFVURPf_Y91RK_Zp2Wp2YhaUn4KrQLKY")
 
 app = Flask(__name__)
 

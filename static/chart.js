@@ -36,7 +36,7 @@ document.getElementById('container'),
 );
 
 // Create the Main Series (Candlesticks)
-const mainSeries = chart.addCandlestickSeries();
+const mainSeries = chart.addSeries(LightweightCharts.CandlestickSeries);
 
 // Changing the Candlestick colors
 mainSeries.applyOptions({
